@@ -169,10 +169,20 @@ grid-column: 2 / 2;
   top: -480px;
 }
 
+.textgrid {
+  display: grid;
+  overflow: hidden; /* Taşmayı engeller */
+}
+
 .textgrid p {
-  grid-column: 3 / 5; /* Yazıyı 3. ve 4. kolona yay */
-  text-align: center; /* Yazıyı ortala */
+  grid-column: 3 / span 2; /* 3. sütundan başlayıp 2 sütun kaplasın */
+  width: 100%; /* İçerik genişliğini tam kaplasın */
+  padding: 0 20px; /* Okunabilirlik için yan boşluk */
+  box-sizing: border-box;
+  
+  /* Mevcut stiller */
+  text-align: center;
   color: #ffffff;
   font-size: 18px;
-  margin-top: 20px; /* Üstten biraz boşluk ekleyelim */
+  margin-top: 100px;
 }
