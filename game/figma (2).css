@@ -355,3 +355,28 @@ body {
   transform: translateX(-1px);   /
 }
 
+footer {
+  display: flex;
+  top: 100px;
+  background-color: #222;
+  color: white;
+  padding: 200px;
+  width: 100vh;
+  text-align: center;
+}
+
+ .downwrite {
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer h1 {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 400;
+}
+footer h3 {
+  display: flex;
+  align-self: flex-start;
+  font-size: 20px;
+}
